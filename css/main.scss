@@ -106,7 +106,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    padding: .5rem;
+    padding: 1.5rem;
 }
 
 header nav ul {
@@ -117,13 +117,14 @@ header nav ul {
 
 header button {
     background: transparent;
-    width: 2rem;
+    width: 1.5rem;
     height: 1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     border: none;
     transition: all ease .3s;
+    display: none;
 }
 
 header button div {
@@ -132,6 +133,15 @@ header button div {
     background: #FFFFFF;
 }
 
-@media screen {
+
+
+@media only screen and (max-width: 640px) {
+    header button {
+        display: flex;
+    }
+    
+    header nav {
+        display: none;
+    }
     
 }
